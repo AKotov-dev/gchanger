@@ -20,3 +20,7 @@ Recommendations:
 Disclaimer: The program is provided `As Is`. The author is not responsible for your actions. Be careful when specifying parameters and settings.
 
 **Similar programs:** [PChanger](https://github.com/AKotov-dev/pchanger) - Plymouth changer: quickly change the system boot screen.
+  
+![](https://github.com/AKotov-dev/gchanger/blob/main/ScreenShots/gchanger1.png)  
+  
+![](https://github.com/AKotov-dev/gchanger/blob/main/ScreenShots/gchanger2.png)

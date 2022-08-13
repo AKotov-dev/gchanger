@@ -1,0 +1,318 @@
+object MainForm: TMainForm
+  Left = 313
+  Height = 765
+  Top = 69
+  Width = 1035
+  ActiveControl = ListBox1
+  Caption = 'GChanger'
+  ClientHeight = 765
+  ClientWidth = 1035
+  OnCreate = FormCreate
+  OnShow = FormShow
+  SessionProperties = 'Height;Left;OpenPictureDialog1.InitialDir;Panel1.Height;Panel2.Width;SaveDialog1.InitialDir;Top;Width;SelectDirectoryDialog1.InitialDir'
+  LCLVersion = '2.2.0.4'
+  object Panel1: TPanel
+    Left = 0
+    Height = 73
+    Top = 672
+    Width = 1035
+    Align = alBottom
+    BevelOuter = bvNone
+    Caption = 'Panel1'
+    ClientHeight = 73
+    ClientWidth = 1035
+    TabOrder = 0
+    object LogMemo: TMemo
+      Left = 0
+      Height = 73
+      Top = 0
+      Width = 1035
+      Align = alClient
+      Anchors = [akLeft, akRight]
+      BorderStyle = bsNone
+      Font.Height = -12
+      Font.Name = 'Monospace'
+      ParentFont = False
+      ReadOnly = True
+      ScrollBars = ssVertical
+      TabOrder = 0
+    end
+  end
+  object Splitter1: TSplitter
+    Cursor = crVSplit
+    Left = 0
+    Height = 4
+    Top = 668
+    Width = 1035
+    Align = alBottom
+    ResizeAnchor = akBottom
+  end
+  object Panel2: TPanel
+    Left = 0
+    Height = 668
+    Top = 0
+    Width = 254
+    Align = alLeft
+    BevelOuter = bvNone
+    Caption = 'Panel2'
+    ClientHeight = 668
+    ClientWidth = 254
+    TabOrder = 2
+    object ListBox1: TListBox
+      AnchorSideTop.Control = LoadBtn
+      AnchorSideTop.Side = asrBottom
+      Left = 5
+      Height = 615
+      Top = 48
+      Width = 249
+      Align = alBottom
+      Anchors = [akTop, akLeft, akRight, akBottom]
+      BorderSpacing.Left = 5
+      BorderSpacing.Top = 5
+      BorderSpacing.Bottom = 5
+      BorderStyle = bsNone
+      ItemHeight = 0
+      OnDblClick = ListBox1DblClick
+      OnSelectionChange = ListBox1SelectionChange
+      Sorted = True
+      TabOrder = 0
+      TopIndex = -1
+    end
+    object LoadBtn: TBitBtn
+      Left = 6
+      Height = 35
+      Hint = 'Loading a theme from a directory'
+      Top = 8
+      Width = 98
+      Caption = 'Load'
+      OnClick = LoadBtnClick
+      ParentShowHint = False
+      ShowHint = True
+      TabOrder = 1
+    end
+    object DeleteBtn: TBitBtn
+      Left = 104
+      Height = 35
+      Hint = 'Delete the selected theme'
+      Top = 8
+      Width = 40
+      Caption = 'X'
+      OnClick = DeleteBtnClick
+      ParentShowHint = False
+      ShowHint = True
+      TabOrder = 2
+    end
+    object ExportBtn: TBitBtn
+      Left = 144
+      Height = 35
+      Hint = 'Upload the selected theme to the archive *.tar.gz'
+      Top = 8
+      Width = 98
+      Caption = 'Export'
+      OnClick = ExportBtnClick
+      ParentShowHint = False
+      ShowHint = True
+      TabOrder = 3
+    end
+  end
+  object Splitter2: TSplitter
+    Left = 254
+    Height = 668
+    Top = 0
+    Width = 6
+  end
+  object Panel3: TPanel
+    Left = 260
+    Height = 668
+    Top = 0
+    Width = 775
+    Align = alClient
+    BevelOuter = bvNone
+    ClientHeight = 668
+    ClientWidth = 775
+    Font.Height = -17
+    Font.Name = 'Sans'
+    Font.Style = [fsItalic]
+    ParentFont = False
+    TabOrder = 4
+    object Image1: TImage
+      AnchorSideTop.Control = ApplyBtn
+      AnchorSideTop.Side = asrBottom
+      Left = 0
+      Height = 615
+      Hint = 'Background of the selected theme (preview)'
+      Top = 48
+      Width = 770
+      Align = alBottom
+      Anchors = [akTop, akLeft, akRight]
+      BorderSpacing.Top = 5
+      BorderSpacing.Right = 5
+      BorderSpacing.Bottom = 5
+      KeepOriginXWhenClipped = True
+      KeepOriginYWhenClipped = True
+      ParentShowHint = False
+      ShowHint = True
+      Stretch = True
+    end
+    object RestoreBtn: TBitBtn
+      AnchorSideRight.Control = ApplyBtn
+      Left = 529
+      Height = 35
+      Hint = 'Restore default settings'
+      Top = 8
+      Width = 120
+      Anchors = [akTop, akRight]
+      BorderSpacing.Right = 1
+      Caption = 'Restore'
+      Font.Height = -13
+      Font.Name = 'Sans'
+      OnClick = RestoreBtnClick
+      ParentFont = False
+      ParentShowHint = False
+      ShowHint = True
+      TabOrder = 0
+    end
+    object ApplyBtn: TBitBtn
+      AnchorSideRight.Control = Panel3
+      AnchorSideRight.Side = asrBottom
+      Left = 650
+      Height = 35
+      Hint = 'Install the selected GRUB theme'
+      Top = 8
+      Width = 120
+      Anchors = [akTop, akRight]
+      BorderSpacing.Right = 5
+      Caption = 'Apply'
+      Font.Height = -13
+      Font.Name = 'Sans'
+      OnClick = ApplyBtnClick
+      ParentFont = False
+      ParentShowHint = False
+      ShowHint = True
+      TabOrder = 1
+    end
+    object Label2: TLabel
+      AnchorSideTop.Control = SpinEdit1
+      AnchorSideTop.Side = asrCenter
+      Left = 8
+      Height = 17
+      Top = 17
+      Width = 42
+      Caption = 'Pause:'
+      Font.Height = -13
+      Font.Name = 'Sans'
+      ParentFont = False
+    end
+    object SpinEdit1: TSpinEdit
+      AnchorSideLeft.Control = Label2
+      AnchorSideLeft.Side = asrBottom
+      AnchorSideTop.Control = ApplyBtn
+      AnchorSideTop.Side = asrCenter
+      Left = 53
+      Height = 35
+      Hint = 'Delay before booting the system'
+      Top = 8
+      Width = 75
+      BorderSpacing.Left = 3
+      Font.Height = -13
+      Font.Name = 'Sans'
+      MaxValue = 50
+      ParentFont = False
+      ParentShowHint = False
+      ShowHint = True
+      TabOrder = 2
+      Value = 10
+    end
+    object ChangeBgBtn: TBitBtn
+      AnchorSideRight.Control = RestoreBtn
+      Left = 368
+      Height = 35
+      Top = 8
+      Width = 160
+      Anchors = [akTop, akRight]
+      BorderSpacing.Right = 1
+      Caption = 'Replace background'
+      Font.Height = -13
+      Font.Name = 'Sans'
+      OnClick = ChangeBgBtnClick
+      ParentFont = False
+      ParentShowHint = False
+      TabOrder = 3
+    end
+    object Edit1: TEdit
+      AnchorSideLeft.Control = SpinEdit1
+      AnchorSideLeft.Side = asrBottom
+      AnchorSideTop.Control = ApplyBtn
+      AnchorSideTop.Side = asrCenter
+      Left = 133
+      Height = 35
+      Hint = 'WidthxHeight or WidthxHeight,auto or auto'#10'Mageia Default Settings: 1024x768x32'
+      Top = 8
+      Width = 179
+      BorderSpacing.Left = 5
+      Font.Height = -13
+      Font.Name = 'Sans'
+      ParentFont = False
+      ParentShowHint = False
+      ShowHint = True
+      TabOrder = 4
+      Text = '1600x900'
+    end
+    object GetScreenBtn: TBitBtn
+      AnchorSideLeft.Control = Edit1
+      AnchorSideLeft.Side = asrBottom
+      AnchorSideTop.Control = Edit1
+      AnchorSideBottom.Control = Edit1
+      AnchorSideBottom.Side = asrBottom
+      Left = 312
+      Height = 35
+      Hint = 'Take the screen resolution'
+      Top = 8
+      Width = 35
+      Anchors = [akTop, akLeft, akBottom]
+      BorderSpacing.Right = 2
+      Caption = 'S'
+      Font.Height = -13
+      Font.Name = 'Sans'
+      OnClick = GetScreenBtnClick
+      ParentFont = False
+      ParentShowHint = False
+      ShowHint = True
+      TabOrder = 5
+    end
+  end
+  object StaticText1: TStaticText
+    Left = 0
+    Height = 20
+    Top = 745
+    Width = 1035
+    Align = alBottom
+    Caption = 'License: GPLv3   Author: alex_q_2000 (C) 2022   URL: https://linuxforum.ru'
+    Font.Color = clGray
+    Font.Height = -11
+    Font.Name = 'Sans'
+    ParentFont = False
+    TabOrder = 5
+  end
+  object IniPropStorage1: TIniPropStorage
+    StoredValues = <>
+    Left = 328
+    Top = 80
+  end
+  object OpenPictureDialog1: TOpenPictureDialog
+    Filter = 'Background files (*.png, *.jpg, *.jpeg)|*.png;*.jpg; *.jpeg'
+    Left = 464
+    Top = 80
+  end
+  object SelectDirectoryDialog1: TSelectDirectoryDialog
+    Left = 616
+    Top = 80
+  end
+  object SaveDialog1: TSaveDialog
+    DefaultExt = '.*.tar.gz'
+    Filter = 'Theme file (*.tar.gz)|*.tar.gz'
+    Options = [ofOverwritePrompt, ofEnableSizing, ofViewDetail]
+    Left = 760
+    Top = 80
+  end
+end

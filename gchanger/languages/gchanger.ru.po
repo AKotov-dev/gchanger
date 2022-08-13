@@ -1,0 +1,147 @@
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=UTF-8\n"
+"Project-Id-Version: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.4.2\n"
+"Last-Translator: alex_q_2000\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<12 || n%100>14) ? 1 : 2);\n"
+"Language: ru\n"
+
+#: tmainform.applybtn.caption
+msgid "Apply"
+msgstr "Применить"
+
+#: tmainform.applybtn.hint
+msgid "Install the selected GRUB theme"
+msgstr "Установить выбранную тему GRUB"
+
+#: tmainform.caption
+msgid "GChanger"
+msgstr ""
+
+#: tmainform.changebgbtn.caption
+msgid "Replace background"
+msgstr "Заменить фон"
+
+#: tmainform.deletebtn.caption
+msgctxt "tmainform.deletebtn.caption"
+msgid "X"
+msgstr ""
+
+#: tmainform.deletebtn.hint
+msgid "Delete the selected theme"
+msgstr "Удалить выбранную тему"
+
+#: tmainform.edit1.hint
+msgid ""
+"WidthxHeight or WidthxHeight,auto or auto\n"
+"Mageia Default Settings: 1024x768x32"
+msgstr ""
+"ШиринаxВысота или ШиринаxВысота,auto или auto\n"
+"Установки Mageia по умолчанию: 1024x768x32"
+
+#: tmainform.edit1.text
+msgid "1600x900"
+msgstr ""
+
+#: tmainform.exportbtn.caption
+msgctxt "tmainform.exportbtn.caption"
+msgid "Export"
+msgstr "Экспорт"
+
+#: tmainform.exportbtn.hint
+msgid "Upload the selected theme to the archive *.tar.gz"
+msgstr "Выгрузить выбранную тему в архиве *.tar.gz"
+
+#: tmainform.getscreenbtn.caption
+msgctxt "tmainform.getscreenbtn.caption"
+msgid "S"
+msgstr ""
+
+#: tmainform.getscreenbtn.hint
+msgctxt "tmainform.getscreenbtn.hint"
+msgid "Take the screen resolution"
+msgstr "Взять разрешение экрана"
+
+#: tmainform.image1.hint
+msgid "Background of the selected theme (preview)"
+msgstr "Фон выбранной темы (предосмотр)"
+
+#: tmainform.label2.caption
+msgid "Pause:"
+msgstr "Пауза:"
+
+#: tmainform.loadbtn.caption
+msgctxt "tmainform.loadbtn.caption"
+msgid "Load"
+msgstr "Загрузить"
+
+#: tmainform.loadbtn.hint
+msgid "Loading a theme from a directory"
+msgstr "Загрузить тему из директории"
+
+#: tmainform.panel1.caption
+msgid "Panel1"
+msgstr ""
+
+#: tmainform.panel2.caption
+msgid "Panel2"
+msgstr ""
+
+#: tmainform.restorebtn.caption
+msgid "Restore"
+msgstr "Восстановить"
+
+#: tmainform.restorebtn.hint
+msgid "Restore default settings"
+msgstr "Восстановить настройки по умолчанию"
+
+#: tmainform.spinedit1.hint
+msgid "Delay before booting the system"
+msgstr "Задержка перед загрузкой системы"
+
+#: tmainform.statictext1.caption
+msgid "License: GPLv3   Author: alex_q_2000 (C) 2022   URL: https://linuxforum.ru"
+msgstr "Лицензия: GPLv3   Автор: alex_q_2000 (C) 2022   URL: https://linuxforum.ru"
+
+#: unit1.sactivetheme
+msgid "This theme is active now! It cannot be deleted!"
+msgstr "Эта тема активна! Её нельзя удалить!"
+
+#: unit1.sapplytheme
+msgid "Install the selected theme?"
+msgstr "Установить выбранную тему?"
+
+#: unit1.schangebg
+msgid "Replace the background of the selected theme?"
+msgstr "Заменить фон выбранной темы?"
+
+#: unit1.sloadingimage
+msgctxt "unit1.sloadingimage"
+msgid "loading an background image..."
+msgstr "загрузка изображения фона..."
+
+#: unit1.snotheme
+msgid "There is no theme in this directory!"
+msgstr "Эта директория не содержит темы!"
+
+#: unit1.sstartinstall
+msgid "Theme installation is running, please wait..."
+msgstr "Запущена установка темы, пожалуйста ждите..."
+
+#: unit1.sthemedelete
+msgid "Delete the selected theme?"
+msgstr "Удалить выбранную тему?"
+
+#: unit1.sthemeexists
+msgid "The theme already exists. Overwrite it?"
+msgstr "Тема уже существует. Перезаписать?"
+
+#: unit1.sthemerestore
+msgid "Restore default settings?"
+msgstr "Восстановить настройки по умолчанию?"

@@ -1,0 +1,135 @@
+msgid ""
+msgstr "Content-Type: text/plain; charset=UTF-8"
+
+#: tmainform.applybtn.caption
+msgid "Apply"
+msgstr ""
+
+#: tmainform.applybtn.hint
+msgid "Install the selected GRUB theme"
+msgstr ""
+
+#: tmainform.caption
+msgid "GChanger"
+msgstr ""
+
+#: tmainform.changebgbtn.caption
+msgid "Replace background"
+msgstr ""
+
+#: tmainform.deletebtn.caption
+msgctxt "tmainform.deletebtn.caption"
+msgid "X"
+msgstr ""
+
+#: tmainform.deletebtn.hint
+msgid "Delete the selected theme"
+msgstr ""
+
+#: tmainform.edit1.hint
+msgid ""
+"WidthxHeight or WidthxHeight,auto or auto\n"
+"Mageia Default Settings: 1024x768x32"
+msgstr ""
+
+#: tmainform.edit1.text
+msgid "1600x900"
+msgstr ""
+
+#: tmainform.exportbtn.caption
+msgctxt "tmainform.exportbtn.caption"
+msgid "Export"
+msgstr ""
+
+#: tmainform.exportbtn.hint
+msgid "Upload the selected theme to the archive *.tar.gz"
+msgstr ""
+
+#: tmainform.getscreenbtn.caption
+msgctxt "tmainform.getscreenbtn.caption"
+msgid "S"
+msgstr ""
+
+#: tmainform.getscreenbtn.hint
+msgctxt "tmainform.getscreenbtn.hint"
+msgid "Take the screen resolution"
+msgstr ""
+
+#: tmainform.image1.hint
+msgid "Background of the selected theme (preview)"
+msgstr ""
+
+#: tmainform.label2.caption
+msgid "Pause:"
+msgstr ""
+
+#: tmainform.loadbtn.caption
+msgctxt "tmainform.loadbtn.caption"
+msgid "Load"
+msgstr ""
+
+#: tmainform.loadbtn.hint
+msgid "Loading a theme from a directory"
+msgstr ""
+
+#: tmainform.panel1.caption
+msgid "Panel1"
+msgstr ""
+
+#: tmainform.panel2.caption
+msgid "Panel2"
+msgstr ""
+
+#: tmainform.restorebtn.caption
+msgid "Restore"
+msgstr ""
+
+#: tmainform.restorebtn.hint
+msgid "Restore default settings"
+msgstr ""
+
+#: tmainform.spinedit1.hint
+msgid "Delay before booting the system"
+msgstr ""
+
+#: tmainform.statictext1.caption
+msgid "License: GPLv3   Author: alex_q_2000 (C) 2022   URL: https://linuxforum.ru"
+msgstr ""
+
+#: unit1.sactivetheme
+msgid "This theme is active now! It cannot be deleted!"
+msgstr ""
+
+#: unit1.sapplytheme
+msgid "Install the selected theme?"
+msgstr ""
+
+#: unit1.schangebg
+msgid "Replace the background of the selected theme?"
+msgstr ""
+
+#: unit1.sloadingimage
+msgctxt "unit1.sloadingimage"
+msgid "loading an background image..."
+msgstr ""
+
+#: unit1.snotheme
+msgid "There is no theme in this directory!"
+msgstr ""
+
+#: unit1.sstartinstall
+msgid "Theme installation is running, please wait..."
+msgstr ""
+
+#: unit1.sthemedelete
+msgid "Delete the selected theme?"
+msgstr ""
+
+#: unit1.sthemeexists
+msgid "The theme already exists. Overwrite it?"
+msgstr ""
+
+#: unit1.sthemerestore
+msgid "Restore default settings?"
+msgstr ""
+
