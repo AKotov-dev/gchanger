@@ -25,7 +25,7 @@ vendor=alex_q_2000 (C) 2022
 summary=GRUB2 Theme Changer for Mageia Linux
 
 [URLCOPY]
-urlcopy=111
+urlcopy=https://github.com/AKotov-dev/gchanger
 
 [LICENSE]
 license=GPLv3
@@ -93,7 +93,7 @@ deb=0
 5=fi
 
 [URL32]
-url32=11
+url32=https://github.com/AKotov-dev/gchanger
 
 [URL64]
 url64=
