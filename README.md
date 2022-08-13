@@ -25,4 +25,4 @@ Disclaimer: The program is provided `As Is`. The author is not responsible for y
   
 ![](https://github.com/AKotov-dev/gchanger/blob/main/ScreenShots/gchanger1.png)  
   
-![](https://github.com/AKotov-dev/gchanger/blob/main/ScreenShots/gchanger2.png)
+![](https://github.com/AKotov-dev/gchanger/blob/main/ScreenShots/gchanger3.png)
