@@ -3,7 +3,7 @@
 **Dependencies:** gtk2 polkit grub2-mageia-theme  
   
 The program is designed to easily replace the GRUB2 theme.  
-The program used Vendor themes (GPLv3). Author: [Adrian Środoń (AdisonCavani)](https://github.com/AdisonCavani/distro-grub-themes).
+The program used Vendor themes (GPLv3). Author of themes: [Adrian Środoń (AdisonCavani)](https://github.com/AdisonCavani/distro-grub-themes).
 
 Opportunities:
 --
