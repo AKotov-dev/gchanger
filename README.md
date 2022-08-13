@@ -1,10 +1,11 @@
 # GChanger - GRUB theme Changer for Mageia Linux
 
-Dependencies: gtk2 polkit grub2-mageia-theme  
+**Dependencies:** gtk2 polkit grub2-mageia-theme  
   
 The program is designed to easily replace the GRUB theme.
 
-**Opportunities:**
+Opportunities:
+--
 + contains 32 preset themes for various screen resolutions (1080p/2k/4k)
 + allows you to download new themes from external directories, delete themes, change the background (png, jpeg, jpg)
 + sets the selected timeout (pause until the system boots)
