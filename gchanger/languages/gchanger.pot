@@ -72,6 +72,18 @@ msgstr ""
 msgid "Loading a theme from a directory"
 msgstr ""
 
+#: tmainform.menuitem1.caption
+msgid "Load theme"
+msgstr ""
+
+#: tmainform.menuitem2.caption
+msgid "Export to *.tar.gz"
+msgstr ""
+
+#: tmainform.menuitem3.caption
+msgid "Delete theme"
+msgstr ""
+
 #: tmainform.panel1.caption
 msgid "Panel1"
 msgstr ""

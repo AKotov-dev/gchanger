@@ -7,7 +7,7 @@ interface
 uses
   Classes, SysUtils, Forms, Controls, Graphics, Dialogs, StdCtrls, Buttons,
   ExtCtrls, ComCtrls, Process, DefaultTranslator, Spin, IniPropStorage,
-  ExtDlgs, FileUtil;
+  ExtDlgs, Menus, FileUtil;
 
 type
 
@@ -26,10 +26,15 @@ type
     Label2: TLabel;
     ListBox1: TListBox;
     LogMemo: TMemo;
+    MenuItem1: TMenuItem;
+    MenuItem2: TMenuItem;
+    MenuItem3: TMenuItem;
+    Separator1: TMenuItem;
     OpenPictureDialog1: TOpenPictureDialog;
     Panel1: TPanel;
     Panel2: TPanel;
     Panel3: TPanel;
+    PopupMenu1: TPopupMenu;
     RestoreBtn: TBitBtn;
     SaveDialog1: TSaveDialog;
     SelectDirectoryDialog1: TSelectDirectoryDialog;
@@ -48,6 +53,10 @@ type
     procedure FormShow(Sender: TObject);
     procedure ListBox1DblClick(Sender: TObject);
     procedure LoadThemesList;
+    procedure MenuItem1Click(Sender: TObject);
+    procedure MenuItem2Click(Sender: TObject);
+    procedure MenuItem3Click(Sender: TObject);
+    procedure PopupMenu1Popup(Sender: TObject);
     procedure RestoreBtnClick(Sender: TObject);
   private
 
@@ -101,6 +110,26 @@ begin
     FindClose(sr);
     Screen.Cursor := crDefault;
   end;
+end;
+
+procedure TMainForm.MenuItem1Click(Sender: TObject);
+begin
+  LoadBtn.Click;
+end;
+
+procedure TMainForm.MenuItem2Click(Sender: TObject);
+begin
+  ExportBtn.Click;
+end;
+
+procedure TMainForm.MenuItem3Click(Sender: TObject);
+begin
+  DeleteBtn.Click;
+end;
+
+procedure TMainForm.PopupMenu1Popup(Sender: TObject);
+begin
+  if ListBox1.Items[ListBox1.ItemIndex] = 'maggy' then Abort;
 end;
 
 //Restore settings
@@ -191,7 +220,8 @@ begin
   if MessageDlg(SApplyTheme, mtConfirmation, [mbYes, mbNo], 0) <> mrYes then Exit;
 
   //Если разрешение не введено
-  if (Pos('auto', Trim(ComboBox1.Text)) = 0) and (Pos('x', Trim(ComboBox1.Text)) = 0) then
+  if (Pos('auto', Trim(ComboBox1.Text)) = 0) and
+    (Pos('x', Trim(ComboBox1.Text)) = 0) then
     GetScreenBtn.Click;
 
   //Сохранение TimeOut
