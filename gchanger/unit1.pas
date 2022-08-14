@@ -15,8 +15,8 @@ type
 
   TMainForm = class(TForm)
     ApplyBtn: TBitBtn;
+    ComboBox1: TComboBox;
     GetScreenBtn: TBitBtn;
-    Edit1: TEdit;
     LoadBtn: TBitBtn;
     DeleteBtn: TBitBtn;
     ExportBtn: TBitBtn;
@@ -111,14 +111,14 @@ var
 begin
   if MessageDlg(SThemeRestore, mtConfirmation, [mbYes, mbNo], 0) = mrYes then
   begin
-    Edit1.Text := '1024x768x32';
+    ComboBox1.Text := '1024x768x32';
     ListBox1.SetFocus;
     ListBox1.ItemIndex := ListBox1.Items.IndexOf('maggy');
     ListBox1.Click;
 
     //Сохранение Разрешение экрана (1024x768x32)
     if RunCommand('/bin/bash', ['-c', 'sed -i "s/^GRUB_GFXMODE=.*/GRUB_GFXMODE=\"' +
-      Edit1.Text + '\"/g" /etc/default/grub'], S) then
+      ComboBox1.Text + '\"/g" /etc/default/grub'], S) then
 
       //Сохранение Путь к теме
       if RunCommand('/bin/bash',
@@ -155,7 +155,7 @@ begin
     if RunCommand('/bin/bash',
       ['-c', 'grep "^GRUB_GFXMODE=" /etc/default/grub | cut -d "=" -f2 | tr -d "\""'],
       S) then
-      Edit1.Text := Trim(S);
+      ComboBox1.Text := Trim(S);
 
     //Считываем GRUB_TIMEOUT
     if RunCommand('/bin/bash',
@@ -191,7 +191,7 @@ begin
   if MessageDlg(SApplyTheme, mtConfirmation, [mbYes, mbNo], 0) <> mrYes then Exit;
 
   //Если разрешение не введено
-  if (Pos('auto', Trim(Edit1.Text)) = 0) and (Pos('x', Trim(Edit1.Text)) = 0) then
+  if (Pos('auto', Trim(ComboBox1.Text)) = 0) and (Pos('x', Trim(ComboBox1.Text)) = 0) then
     GetScreenBtn.Click;
 
   //Сохранение TimeOut
@@ -200,7 +200,7 @@ begin
 
     //Сохранение Разрешение экрана
     if RunCommand('/bin/bash', ['-c', 'sed -i "s/^GRUB_GFXMODE=.*/GRUB_GFXMODE=\"' +
-      Edit1.Text + '\"/g" /etc/default/grub'], S) then
+      ComboBox1.Text + '\"/g" /etc/default/grub'], S) then
 
       //Сохранение Путь к теме
       if RunCommand('/bin/bash',
@@ -218,7 +218,7 @@ end;
 //Считать разрешение экрана
 procedure TMainForm.GetScreenBtnClick(Sender: TObject);
 begin
-  Edit1.Text := IntToStr(Screen.Width) + 'x' + IntToStr(Screen.Height) + ',auto';
+  ComboBox1.Text := IntToStr(Screen.Width) + 'x' + IntToStr(Screen.Height) + ',auto';
 end;
 
 //Удалить выбранную тему
@@ -269,7 +269,7 @@ begin
     Application.ProcessMessages;
 
     if RunCommand('/bin/bash', ['-c', 'cd /boot/grub2/themes/' +
-      ' && tar -czvf "' + SaveDialog1.FileName + '" ' +
+      ' && tar -czf "' + SaveDialog1.FileName + '" ' +
       ListBox1.Items[ListBox1.ItemIndex] + ' && chown $(logname).$(logname) "' +
       SaveDialog1.FileName + '"'], S) then
       Screen.Cursor := crDefault;

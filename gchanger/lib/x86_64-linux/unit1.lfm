@@ -1,5 +1,5 @@
 object MainForm: TMainForm
-  Left = 313
+  Left = 312
   Height = 765
   Top = 69
   Width = 1035
@@ -213,6 +213,7 @@ object MainForm: TMainForm
       Hint = 'Delay before booting the system'
       Top = 8
       Width = 75
+      AutoSelect = False
       BorderSpacing.Left = 3
       Font.Height = -13
       Font.Name = 'Sans'
@@ -239,32 +240,13 @@ object MainForm: TMainForm
       ParentShowHint = False
       TabOrder = 3
     end
-    object Edit1: TEdit
-      AnchorSideLeft.Control = SpinEdit1
-      AnchorSideLeft.Side = asrBottom
-      AnchorSideTop.Control = ApplyBtn
-      AnchorSideTop.Side = asrCenter
-      Left = 133
-      Height = 35
-      Hint = 'WidthxHeight or WidthxHeight,auto or auto'#10'Mageia Default Settings: 1024x768x32'
-      Top = 8
-      Width = 179
-      BorderSpacing.Left = 5
-      Font.Height = -13
-      Font.Name = 'Sans'
-      ParentFont = False
-      ParentShowHint = False
-      ShowHint = True
-      TabOrder = 4
-      Text = '1600x900'
-    end
     object GetScreenBtn: TBitBtn
-      AnchorSideLeft.Control = Edit1
+      AnchorSideLeft.Control = ComboBox1
       AnchorSideLeft.Side = asrBottom
-      AnchorSideTop.Control = Edit1
-      AnchorSideBottom.Control = Edit1
+      AnchorSideTop.Control = ComboBox1
+      AnchorSideBottom.Control = ComboBox1
       AnchorSideBottom.Side = asrBottom
-      Left = 312
+      Left = 323
       Height = 35
       Hint = 'Take the screen resolution'
       Top = 8
@@ -278,7 +260,32 @@ object MainForm: TMainForm
       ParentFont = False
       ParentShowHint = False
       ShowHint = True
+      TabOrder = 4
+    end
+    object ComboBox1: TComboBox
+      AnchorSideLeft.Control = SpinEdit1
+      AnchorSideLeft.Side = asrBottom
+      AnchorSideTop.Control = ApplyBtn
+      AnchorSideTop.Side = asrCenter
+      Left = 133
+      Height = 35
+      Hint = 'Default Mageia resolution: 1024x768x32'#10'WidthxHeight or WidthxHeight,auto or auto'
+      Top = 8
+      Width = 190
+      AutoSelect = False
+      BorderSpacing.Left = 5
+      Font.Height = -13
+      Font.Name = 'Sans'
+      ItemHeight = 0
+      ItemIndex = 0
+      Items.Strings = (
+        '1024x768x32'
+      )
+      ParentFont = False
+      ParentShowHint = False
+      ShowHint = True
       TabOrder = 5
+      Text = '1024x768x32'
     end
   end
   object StaticText1: TStaticText

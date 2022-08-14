@@ -28,6 +28,18 @@ msgstr ""
 msgid "Replace background"
 msgstr "Заменить фон"
 
+#: tmainform.combobox1.hint
+msgid ""
+"Default Mageia resolution: 1024x768x32\n"
+"WidthxHeight or WidthxHeight,auto or auto"
+msgstr ""
+"Разрешение Mageia по умолчанию: 1024x768x32\n"
+"ШиринаxВысота или ШиринаxВысота,auto или auto"
+
+#: tmainform.combobox1.text
+msgid "1024x768x32"
+msgstr ""
+
 #: tmainform.deletebtn.caption
 msgctxt "tmainform.deletebtn.caption"
 msgid "X"
@@ -36,18 +48,6 @@ msgstr ""
 #: tmainform.deletebtn.hint
 msgid "Delete the selected theme"
 msgstr "Удалить выбранную тему"
-
-#: tmainform.edit1.hint
-msgid ""
-"WidthxHeight or WidthxHeight,auto or auto\n"
-"Mageia Default Settings: 1024x768x32"
-msgstr ""
-"ШиринаxВысота или ШиринаxВысота,auto или auto\n"
-"Установки Mageia по умолчанию: 1024x768x32"
-
-#: tmainform.edit1.text
-msgid "1600x900"
-msgstr ""
 
 #: tmainform.exportbtn.caption
 msgctxt "tmainform.exportbtn.caption"
