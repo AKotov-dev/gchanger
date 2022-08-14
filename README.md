@@ -1,4 +1,4 @@
-# GChanger - GRUB theme Changer for Mageia Linux
+# GChanger - GRUB2 theme Changer for Mageia Linux
 
 **Dependencies:** gtk2 polkit grub2-mageia-theme  
   
