@@ -26,15 +26,10 @@ type
     Label2: TLabel;
     ListBox1: TListBox;
     LogMemo: TMemo;
-    LoadItem: TMenuItem;
-    ExportItem: TMenuItem;
-    DeleteItem: TMenuItem;
-    Separator1: TMenuItem;
     OpenPictureDialog1: TOpenPictureDialog;
     Panel1: TPanel;
     Panel2: TPanel;
     Panel3: TPanel;
-    PopupMenu1: TPopupMenu;
     RestoreBtn: TBitBtn;
     SaveDialog1: TSaveDialog;
     SelectDirectoryDialog1: TSelectDirectoryDialog;

@@ -1,7 +1,7 @@
 object MainForm: TMainForm
-  Left = 314
+  Left = 312
   Height = 765
-  Top = 69
+  Top = 123
   Width = 1035
   ActiveControl = ListBox1
   Caption = 'GChanger'
@@ -74,7 +74,6 @@ object MainForm: TMainForm
       ItemHeight = 0
       OnDblClick = ListBox1DblClick
       OnSelectionChange = ListBox1SelectionChange
-      PopupMenu = PopupMenu1
       Sorted = True
       TabOrder = 3
       TopIndex = -1
@@ -322,24 +321,5 @@ object MainForm: TMainForm
     Options = [ofOverwritePrompt, ofEnableSizing, ofViewDetail]
     Left = 760
     Top = 80
-  end
-  object PopupMenu1: TPopupMenu
-    Left = 128
-    Top = 80
-    object LoadItem: TMenuItem
-      Caption = 'Load theme'
-      OnClick = LoadItemClick
-    end
-    object ExportItem: TMenuItem
-      Caption = 'Export to *.tar.gz'
-      OnClick = ExportItemClick
-    end
-    object Separator1: TMenuItem
-      Caption = '-'
-    end
-    object DeleteItem: TMenuItem
-      Caption = 'Delete theme'
-      OnClick = DeleteItemClick
-    end
   end
 end

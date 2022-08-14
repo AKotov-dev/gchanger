@@ -20,8 +20,5 @@
 {"hash":83,"name":"tmainform.getscreenbtn.caption","sourcebytes":[83],"value":"S"},
 {"hash":34117487,"name":"tmainform.combobox1.hint","sourcebytes":[68,101,102,97,117,108,116,32,77,97,103,101,105,97,32,114,101,115,111,108,117,116,105,111,110,58,32,49,48,50,52,120,55,54,56,120,51,50,10,87,105,100,116,104,120,72,101,105,103,104,116,32,111,114,32,87,105,100,116,104,120,72,101,105,103,104,116,44,97,117,116,111,32,111,114,32,97,117,116,111],"value":"Default Mageia resolution: 1024x768x32\nWidthxHeight or WidthxHeight,auto or auto"},
 {"hash":194891474,"name":"tmainform.combobox1.text","sourcebytes":[49,48,50,52,120,55,54,56,120,51,50],"value":"1024x768x32"},
-{"hash":248956965,"name":"tmainform.statictext1.caption","sourcebytes":[76,105,99,101,110,115,101,58,32,71,80,76,118,51,32,32,32,65,117,116,104,111,114,58,32,97,108,101,120,95,113,95,50,48,48,48,32,40,67,41,32,50,48,50,50,32,32,32,85,82,76,58,32,104,116,116,112,115,58,47,47,108,105,110,117,120,102,111,114,117,109,46,114,117],"value":"License: GPLv3   Author: alex_q_2000 (C) 2022   URL: https://linuxforum.ru"},
-{"hash":109043525,"name":"tmainform.loaditem.caption","sourcebytes":[76,111,97,100,32,116,104,101,109,101],"value":"Load theme"},
-{"hash":119419018,"name":"tmainform.exportitem.caption","sourcebytes":[69,120,112,111,114,116,32,116,111,32,42,46,116,97,114,46,103,122],"value":"Export to *.tar.gz"},
-{"hash":64407701,"name":"tmainform.deleteitem.caption","sourcebytes":[68,101,108,101,116,101,32,116,104,101,109,101],"value":"Delete theme"}
+{"hash":248956965,"name":"tmainform.statictext1.caption","sourcebytes":[76,105,99,101,110,115,101,58,32,71,80,76,118,51,32,32,32,65,117,116,104,111,114,58,32,97,108,101,120,95,113,95,50,48,48,48,32,40,67,41,32,50,48,50,50,32,32,32,85,82,76,58,32,104,116,116,112,115,58,47,47,108,105,110,117,120,102,111,114,117,109,46,114,117],"value":"License: GPLv3   Author: alex_q_2000 (C) 2022   URL: https://linuxforum.ru"}
 ]}

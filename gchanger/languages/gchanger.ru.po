@@ -49,11 +49,6 @@ msgstr ""
 msgid "Delete the selected theme"
 msgstr "Удалить выбранную тему"
 
-#: tmainform.deleteitem.caption
-msgctxt "tmainform.deleteitem.caption"
-msgid "Delete theme"
-msgstr "Удалить тему"
-
 #: tmainform.exportbtn.caption
 msgctxt "tmainform.exportbtn.caption"
 msgid "Export"
@@ -62,11 +57,6 @@ msgstr "Экспорт"
 #: tmainform.exportbtn.hint
 msgid "Upload the selected theme to the archive *.tar.gz"
 msgstr "Выгрузить выбранную тему в архиве *.tar.gz"
-
-#: tmainform.exportitem.caption
-msgctxt "tmainform.exportitem.caption"
-msgid "Export to *.tar.gz"
-msgstr "Экспорт в *.tar.gz"
 
 #: tmainform.getscreenbtn.caption
 msgctxt "tmainform.getscreenbtn.caption"
@@ -94,11 +84,6 @@ msgstr "Загрузить"
 #: tmainform.loadbtn.hint
 msgid "Loading a theme from a directory"
 msgstr "Загрузить тему из директории"
-
-#: tmainform.loaditem.caption
-msgctxt "tmainform.loaditem.caption"
-msgid "Load theme"
-msgstr "Загрузить тему"
 
 #: tmainform.panel1.caption
 msgid "Panel1"
@@ -160,3 +145,4 @@ msgstr "Тема уже существует. Перезаписать?"
 #: unit1.sthemerestore
 msgid "Restore default settings?"
 msgstr "Восстановить настройки по умолчанию?"
+

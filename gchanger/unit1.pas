@@ -26,15 +26,10 @@ type
     Label2: TLabel;
     ListBox1: TListBox;
     LogMemo: TMemo;
-    LoadItem: TMenuItem;
-    ExportItem: TMenuItem;
-    DeleteItem: TMenuItem;
-    Separator1: TMenuItem;
     OpenPictureDialog1: TOpenPictureDialog;
     Panel1: TPanel;
     Panel2: TPanel;
     Panel3: TPanel;
-    PopupMenu1: TPopupMenu;
     RestoreBtn: TBitBtn;
     SaveDialog1: TSaveDialog;
     SelectDirectoryDialog1: TSelectDirectoryDialog;
@@ -306,15 +301,9 @@ procedure TMainForm.ListBox1SelectionChange(Sender: TObject; User: boolean);
 begin
   //Обходим/защищяем от удаления тему maggy
   if ListBox1.Items[ListBox1.ItemIndex] = 'maggy' then
-  begin
-    DeleteBtn.Enabled := False;
-    DeleteItem.Enabled := False;
-  end
+    DeleteBtn.Enabled := False
   else
-  begin
     DeleteBtn.Enabled := True;
-    DeleteItem.Enabled := True;
-  end;
 
   if ListBox1.Count <> 0 then
   begin
