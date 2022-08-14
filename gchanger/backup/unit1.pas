@@ -348,6 +348,7 @@ begin
   end;
 end;
 
+//Загрузка темы
 procedure TMainForm.LoadBtnClick(Sender: TObject);
 begin
   //Проверка наличия theme.txt
@@ -362,7 +363,7 @@ begin
       Exit;
     end;
 
-    //Если существует - перезаписать?
+    //Если тема существует - перезаписать?
     if DirectoryExists('/boot/grub2/themes/' + ExtractFileName(
       SelectDirectoryDialog1.FileName)) then
       if MessageDlg(SThemeExists, mtWarning, [mbYes, mbNo], 0) = mrYes then

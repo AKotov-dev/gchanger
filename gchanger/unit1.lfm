@@ -218,7 +218,7 @@ object MainForm: TMainForm
       BorderSpacing.Left = 3
       Font.Height = -13
       Font.Name = 'Sans'
-      MaxValue = 50
+      MaxValue = 60
       ParentFont = False
       ParentShowHint = False
       ShowHint = True
