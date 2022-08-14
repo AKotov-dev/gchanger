@@ -26,9 +26,9 @@ type
     Label2: TLabel;
     ListBox1: TListBox;
     LogMemo: TMemo;
-    MenuItem1: TMenuItem;
-    MenuItem2: TMenuItem;
-    MenuItem3: TMenuItem;
+    LoadItem: TMenuItem;
+    ExportItem: TMenuItem;
+    DeleteItem: TMenuItem;
     Separator1: TMenuItem;
     OpenPictureDialog1: TOpenPictureDialog;
     Panel1: TPanel;
@@ -53,10 +53,9 @@ type
     procedure FormShow(Sender: TObject);
     procedure ListBox1DblClick(Sender: TObject);
     procedure LoadThemesList;
-    procedure MenuItem1Click(Sender: TObject);
-    procedure MenuItem2Click(Sender: TObject);
-    procedure MenuItem3Click(Sender: TObject);
-    procedure PopupMenu1Popup(Sender: TObject);
+    procedure LoadItemClick(Sender: TObject);
+    procedure ExportItemClick(Sender: TObject);
+    procedure DeleteItemClick(Sender: TObject);
     procedure RestoreBtnClick(Sender: TObject);
   private
 
@@ -113,25 +112,19 @@ begin
 end;
 
 //PopUP menu
-procedure TMainForm.MenuItem1Click(Sender: TObject);
+procedure TMainForm.LoadItemClick(Sender: TObject);
 begin
   LoadBtn.Click;
 end;
 
-procedure TMainForm.MenuItem2Click(Sender: TObject);
+procedure TMainForm.ExportItemClick(Sender: TObject);
 begin
   ExportBtn.Click;
 end;
 
-procedure TMainForm.MenuItem3Click(Sender: TObject);
+procedure TMainForm.DeleteItemClick(Sender: TObject);
 begin
   DeleteBtn.Click;
-end;
-
-//Защищаем тему по дефолту
-procedure TMainForm.PopupMenu1Popup(Sender: TObject);
-begin
-  if ListBox1.Items[ListBox1.ItemIndex] = 'maggy' then Abort;
 end;
 
 //Restore settings
@@ -172,10 +165,10 @@ var
 begin
   try
     IniPropStorage1.Restore;
-
-    LoadThemesList;
-
     MainForm.Caption := Application.Title;
+
+    //Загружаем список тем
+    LoadThemesList;
 
     //Тема maggy установлена?
     if DirectoryExists('/boot/grub2/themes/maggy') then RestoreBtn.Enabled := True
@@ -278,7 +271,7 @@ begin
 
   LoadThemesList;
 
-  //На всякий случай
+  //На всякий случай (если maggy удалили вручную)
   if ListBox1.Count <> 0 then
   begin
     ListBox1.SetFocus;
@@ -311,6 +304,18 @@ end;
 //Загрузка background при изменении темы в списке
 procedure TMainForm.ListBox1SelectionChange(Sender: TObject; User: boolean);
 begin
+  //Обходим/защищяем от удаления тему maggy
+  if ListBox1.Items[ListBox1.ItemIndex] = 'maggy' then
+  begin
+    DeleteBtn.Enabled := False;
+    DeleteItem.Enabled := False;
+  end
+  else
+  begin
+    DeleteBtn.Enabled := True;
+    DeleteItem.Enabled := True;
+  end;
+
   if ListBox1.Count <> 0 then
   begin
     Screen.Cursor := crHourGlass;
@@ -343,6 +348,7 @@ begin
   end;
 end;
 
+//Загрузка темы
 procedure TMainForm.LoadBtnClick(Sender: TObject);
 begin
   //Проверка наличия theme.txt
@@ -357,7 +363,7 @@ begin
       Exit;
     end;
 
-    //Если существует - перезаписать?
+    //Если тема существует - перезаписать?
     if DirectoryExists('/boot/grub2/themes/' + ExtractFileName(
       SelectDirectoryDialog1.FileName)) then
       if MessageDlg(SThemeExists, mtWarning, [mbYes, mbNo], 0) = mrYes then

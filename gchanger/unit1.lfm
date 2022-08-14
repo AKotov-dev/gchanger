@@ -1,5 +1,5 @@
 object MainForm: TMainForm
-  Left = 313
+  Left = 314
   Height = 765
   Top = 69
   Width = 1035
@@ -76,7 +76,7 @@ object MainForm: TMainForm
       OnSelectionChange = ListBox1SelectionChange
       PopupMenu = PopupMenu1
       Sorted = True
-      TabOrder = 0
+      TabOrder = 3
       TopIndex = -1
     end
     object LoadBtn: TBitBtn
@@ -89,7 +89,7 @@ object MainForm: TMainForm
       OnClick = LoadBtnClick
       ParentShowHint = False
       ShowHint = True
-      TabOrder = 1
+      TabOrder = 0
     end
     object DeleteBtn: TBitBtn
       Left = 104
@@ -101,7 +101,7 @@ object MainForm: TMainForm
       OnClick = DeleteBtnClick
       ParentShowHint = False
       ShowHint = True
-      TabOrder = 2
+      TabOrder = 1
     end
     object ExportBtn: TBitBtn
       Left = 144
@@ -113,7 +113,7 @@ object MainForm: TMainForm
       OnClick = ExportBtnClick
       ParentShowHint = False
       ShowHint = True
-      TabOrder = 3
+      TabOrder = 2
     end
   end
   object Splitter2: TSplitter
@@ -324,23 +324,22 @@ object MainForm: TMainForm
     Top = 80
   end
   object PopupMenu1: TPopupMenu
-    OnPopup = PopupMenu1Popup
     Left = 128
     Top = 80
-    object MenuItem1: TMenuItem
+    object LoadItem: TMenuItem
       Caption = 'Load theme'
-      OnClick = MenuItem1Click
+      OnClick = LoadItemClick
     end
-    object MenuItem2: TMenuItem
+    object ExportItem: TMenuItem
       Caption = 'Export to *.tar.gz'
-      OnClick = MenuItem2Click
+      OnClick = ExportItemClick
     end
     object Separator1: TMenuItem
       Caption = '-'
     end
-    object MenuItem3: TMenuItem
+    object DeleteItem: TMenuItem
       Caption = 'Delete theme'
-      OnClick = MenuItem3Click
+      OnClick = DeleteItemClick
     end
   end
 end

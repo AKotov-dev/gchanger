@@ -36,6 +36,11 @@ msgstr ""
 msgid "Delete the selected theme"
 msgstr ""
 
+#: tmainform.deleteitem.caption
+msgctxt "tmainform.deleteitem.caption"
+msgid "Delete theme"
+msgstr ""
+
 #: tmainform.exportbtn.caption
 msgctxt "tmainform.exportbtn.caption"
 msgid "Export"
@@ -43,6 +48,11 @@ msgstr ""
 
 #: tmainform.exportbtn.hint
 msgid "Upload the selected theme to the archive *.tar.gz"
+msgstr ""
+
+#: tmainform.exportitem.caption
+msgctxt "tmainform.exportitem.caption"
+msgid "Export to *.tar.gz"
 msgstr ""
 
 #: tmainform.getscreenbtn.caption
@@ -72,16 +82,9 @@ msgstr ""
 msgid "Loading a theme from a directory"
 msgstr ""
 
-#: tmainform.menuitem1.caption
+#: tmainform.loaditem.caption
+msgctxt "tmainform.loaditem.caption"
 msgid "Load theme"
-msgstr ""
-
-#: tmainform.menuitem2.caption
-msgid "Export to *.tar.gz"
-msgstr ""
-
-#: tmainform.menuitem3.caption
-msgid "Delete theme"
 msgstr ""
 
 #: tmainform.panel1.caption
