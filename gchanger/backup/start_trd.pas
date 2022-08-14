@@ -77,12 +77,8 @@ end;
 //Старт вывода
 procedure ShowLogTRD.StartTRD;
 begin
-  {MainForm.ChangeBgBtn.Enabled := False;
-  MainForm.RestoreBtn.Enabled := False;
-  MainForm.ApplyBtn.Enabled := False;}
-
-  MainForm.Panel2.Enabled:=False;
-  MainForm.Panel3.Enabled:=False;
+  MainForm.Panel2.Enabled := False;
+  MainForm.Panel3.Enabled := False;
   MainForm.LogMemo.Clear;
   MainForm.LogMemo.Append(SStartInstall);
 end;
@@ -90,11 +86,8 @@ end;
 //Стоп вывода
 procedure ShowLogTRD.StopTRD;
 begin
- { MainForm.ChangeBgBtn.Enabled := True;
-  MainForm.RestoreBtn.Enabled := True;
-  MainForm.ApplyBtn.Enabled := True;}
-  MainForm.Panel2.Enabled:=True;
-  MainForm.Panel3.Enabled:=True;
+  MainForm.Panel2.Enabled := True;
+  MainForm.Panel3.Enabled := True;
   MainForm.ListBox1.SetFocus;
 end;
 

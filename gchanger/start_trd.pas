@@ -30,12 +30,11 @@ uses Unit1;
 
 { TRD }
 
-
 procedure ShowLogTRD.Execute;
 var
   ExProcess: TProcess;
 begin
-  try //Старт вывода
+  try //Старт процесса
     Synchronize(@StartTRD);
 
     FreeOnTerminate := True; //Уничтожить по завершении

@@ -112,6 +112,7 @@ begin
   end;
 end;
 
+//PopUP menu
 procedure TMainForm.MenuItem1Click(Sender: TObject);
 begin
   LoadBtn.Click;
@@ -127,9 +128,10 @@ begin
   DeleteBtn.Click;
 end;
 
+//Защищаем тему по дефолту
 procedure TMainForm.PopupMenu1Popup(Sender: TObject);
 begin
-  if ListBox1.Items[ListBox1.ItemIndex] = 'maggy' then Exit;
+  if ListBox1.Items[ListBox1.ItemIndex] = 'maggy' then Abort;
 end;
 
 //Restore settings
@@ -163,7 +165,7 @@ begin
   end;
 end;
 
-//Список тем в ListBox
+//Считываем параметры из /etc/default/grub
 procedure TMainForm.FormShow(Sender: TObject);
 var
   S: ansistring;
@@ -201,7 +203,6 @@ begin
     ListBox1.TopIndex := ListBox1.ItemIndex;
 
     ListBox1.Click;
-
   except
   end;
 end;
@@ -238,7 +239,7 @@ begin
         ListBox1.Items[ListBox1.ItemIndex] +
         '\/theme.txt\"/g" /etc/default/grub'], S) then
 
-        //Запуск потока чтения лога
+        //Запуск update-grub и потока чтения лога
       begin
         FShowLogTRD := ShowLogTRD.Create(False);
         FShowLogTRD.Priority := tpNormal;

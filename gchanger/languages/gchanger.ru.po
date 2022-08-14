@@ -64,8 +64,10 @@ msgid "S"
 msgstr ""
 
 #: tmainform.getscreenbtn.hint
+#, fuzzy
+#| msgid "Take the screen resolution"
 msgctxt "tmainform.getscreenbtn.hint"
-msgid "Take the screen resolution"
+msgid "Get the screen resolution"
 msgstr "Взять разрешение экрана"
 
 #: tmainform.image1.hint
@@ -157,3 +159,4 @@ msgstr "Тема уже существует. Перезаписать?"
 #: unit1.sthemerestore
 msgid "Restore default settings?"
 msgstr "Восстановить настройки по умолчанию?"
+

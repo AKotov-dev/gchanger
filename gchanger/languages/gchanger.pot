@@ -52,7 +52,7 @@ msgstr ""
 
 #: tmainform.getscreenbtn.hint
 msgctxt "tmainform.getscreenbtn.hint"
-msgid "Take the screen resolution"
+msgid "Get the screen resolution"
 msgstr ""
 
 #: tmainform.image1.hint

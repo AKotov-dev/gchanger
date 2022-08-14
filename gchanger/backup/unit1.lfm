@@ -249,7 +249,7 @@ object MainForm: TMainForm
       AnchorSideBottom.Side = asrBottom
       Left = 323
       Height = 35
-      Hint = 'Take the screen resolution'
+      Hint = 'Get the screen resolution'
       Top = 8
       Width = 35
       Anchors = [akTop, akLeft, akBottom]
